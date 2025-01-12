@@ -12,7 +12,7 @@
             padding: 20px;
             background-color: #f0f0f0;
         }
-        h1 {
+        h1, h2 {
             color: #333;
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
@@ -32,16 +32,79 @@
         nav ul li a:hover {
             color: #003366;
         }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .contact-form {
+            display: grid;
+            gap: 10px;
+            max-width: 500px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <h1>Welcome to New Society</h1>
-    <p>This is a simple webpage to demonstrate GitHub workflow.</p>
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>New Society is dedicated to creating innovative solutions for tomorrow's challenges. Our mission is to bridge technology and human needs in meaningful ways.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Digital Transformation</li>
+            <li>Sustainable Solutions</li>
+            <li>Community Building</li>
+            <li>Innovation Consulting</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+        <p>&copy; 2025 New Society. All rights reserved.</p>
+    </footer>
 </body>
 </html>
